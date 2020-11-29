@@ -1,0 +1,35 @@
+Electronic gate system
+This is a system which is used for detecting passing humans into a room.
+
+There are Two main modes:
+
+The first mode:
+When someone enters the room, The servo motor will simulate opening the door and
+The first photoresistor ( ldr 1 ) will sense the person and icrease the number of humans by 1.
+
+
+The Second mode:
+When someone leaves the room, The servo motor will simulate opening the door and
+The second photoresistor ( ldr 2 ) will sense the person and decrease the number of humans by 1.
+
+Whenever the number of the humans inside the room exceeds five persons The buzzer gets fired as an alarm and 
+The servo motor (the door) cannot be opened until one or more persons leaves the room.
+
+Components used to form the system:
+
+Arduino:
+        The microcontroller which control the system.
+Breadboard:
+        is used to organise the wires and the other components.
+        
+        Hardware Abstraction Layer Drivers:
+        Button:
+             is used for switching the system on and switching it off.
+        Servo Motor:
+             is used for simulating opening the door either the person is entering or leaving the room.
+        Buzzer:
+             is used as an alarm, when the number of the humans inside the room exceeds five persons.
+        (2) LDRs:
+             are used for sensing the person entering or leaving the room.
+                The first one for the people entering the room.
+                The second one for the people leaveing the room.
